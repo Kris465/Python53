@@ -1,0 +1,9 @@
+# JavaScript
+node_modules
+package.json
+
+
+# python
+.venv
+.env
+__pycache__
