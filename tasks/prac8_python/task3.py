@@ -1,24 +1,55 @@
-def generate_sequense(seq_type, first, difference, count):
-    sequense = [first]
+def generate_sequence(seq_type, first, difference, count):
+    """
+    Генерирует арифметическую или геометрическую прогрессию
+
+    Args:
+        seq_type: тип последовательности('арифметическая' или 'геометрическая')
+        first: первый элемент последовательности
+        difference: разность(для арифметической)
+                    или знаменатель (для геометрической)
+        count: количество элементов
+
+    Returns:
+        Список элементов последовательности или сообщение об ошибке
+    """
+    # Начинаем с первого элемента
+    sequence = [first]
+
     if seq_type == 'арифметическая':
+        # Арифметическая прогрессия:
+        # каждый следующий элемент = предыдущий + разность
         for i in range(1, count):
             next_element = first + i * difference
-            sequense.append(next_element)
-    
+            sequence.append(next_element)
+
     elif seq_type == 'геометрическая':
+        # Геометрическая прогрессия:
+        # каждый следующий элемент = предыдущий * знаменатель
         for i in range(1, count):
             next_element = first * (difference ** i)
-            sequense.append(next_element)
+            sequence.append(next_element)
     else:
         return "Неизвестный тип последовательности"
-    return sequense 
+
+    return sequence
+
+
 if __name__ == "__main__":
     print("=== Генератор прогрессий ===\n")
+
+    # Арифметическая прогрессия: начинаем с 2, разность 3, 5 элементов
     print("Арифметическая прогрессия (2, 3, 5):")
+    arithmetic = generate_sequence('арифметическая', 2, 3, 5)
     print(arithmetic)
+    # Объяснение: 2, 2+3=5, 2+6=8, 2+9=11, 2+12=14
+
     print("\nГеометрическая прогрессия (2, 3, 5):")
-    geometric = generate_sequense('геометрическая', 2, 3, 5)
+    # Геометрическая прогрессия: начинаем с 2, знаменатель 3, 5 элементов
+    geometric = generate_sequence('геометрическая', 2, 3, 5)
     print(geometric)
+    # Объяснение: 2, 2×3=6, 2×9=18, 2×27=54, 2×81=162
+
     print("\nПроверка на ошибку:")
-    error_test = generate_sequense('неправильная', 1, 1, 5)
+    # Тест с неправильным типом
+    error_test = generate_sequence('неправильная', 1, 1, 5)
     print(error_test)
