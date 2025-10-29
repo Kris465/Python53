@@ -1,0 +1,6 @@
+a = ("2 кг, 13 17")
+b = ("a1, 19b")
+c = ("xy, 5y")
+print(a)
+print(b)
+print(c)
