@@ -1,0 +1,8 @@
+a = input("введи число:")
+b = input("введи число:")
+c = input("введи число:")
+d = input("введи число:")
+print(a)
+print(b)
+print(c)
+print(d)
