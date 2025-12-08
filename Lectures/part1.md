@@ -44,7 +44,7 @@
 | **2.6** | **Позиционирование элементов.** | Свойство `position`: `static`, `relative`, `absolute`, `fixed`, `sticky`. |
 | **2.7** | **Макет: Flexbox.** | Основы Flexbox: `display: flex`, контейнер и элементы. Свойства для выравнивания: `justify-content`, `align-items`, `flex-direction`. |
 | **2.8** | **Макет: CSS Grid.** | Основы Grid: `display: grid`, `grid-template-columns/rows`. Выравнивание и позиционирование в grid-сетке. |
-| **2.9** | **Адаптивная верстка. Медиазапросы.** | Понятие Responsive Web Design (RWD). Правило `@media` для адаптации стилей под разные ширины экрана. |
+| **2.9** | **Адаптивная верстка. Медиазапросы.** | Понятие Responsive Web Design (RWD). Правило `@media` для адаптации стилей под разную ширину экрана. |
 | **2.10**| **Трансформации и переходы (CSS Transforms & Transitions).** | Свойства `transform` (`rotate`, `scale`, `translate`) и `transition` для создания простых анимаций. |
 
 ---
