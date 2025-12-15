@@ -1,4 +1,4 @@
-from math import sin, cos, radians, sqrt
+from math import sin, cos, radians
 
 a = int(input('Введите a'))
 b = int(input('Введите b'))
@@ -11,12 +11,12 @@ d = int(input('Введите d'))
 result1 = a / b / c
 result2 = a * b / c
 result3 = a / b * c
-result4 = a + b / c 
+result4 = a + b / c
 result5 = a + b / c
 result6 = a + b / b + c
 result7 = a + b / b + c
-result8 = a / sin(radians(b)) 
-result9 = 1 / 2 * a * b * sin(radians(x)) 
+result8 = a / sin(radians(b))
+result9 = 1 / 2 * a * b * sin(radians(x))
 result10 = 2 * b * c * cos(radians(a)) / 2 / b + c
 result11 = 4 * R * sin(radians(a)) / 2 * sin(radians(b)) / 2 * sin(radians(c / 2))
 result12 = a * x + b / c * x + d
