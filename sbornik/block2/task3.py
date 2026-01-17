@@ -1,3 +1,3 @@
-number = int(input("Введите ктлограммы "))
+number = int(input("Введите килограммы "))
 
 print(number // 1000)
