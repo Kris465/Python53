@@ -4,4 +4,4 @@ desytki = number // 10
 edinici = number % 10
 
 print(f" десятки = {desytki} , единицы = {edinici}")
-print(f" {desytki + edinici}, {desytki *edinici} ")
+print(f" {desytki + edinici}, {desytki * edinici} ")
